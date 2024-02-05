@@ -5,7 +5,7 @@
 
 #添加 feeds
 # sed -i '$a src-git haiibo https://github.com/haiibo/openwrt-packages' feeds.conf.default
-sed -i '$a src-git kenzok8 https://github.com/kenzok8/small-package' feeds.conf.default
+# sed -i '$a src-git kenzok8 https://github.com/kenzok8/small-package' feeds.conf.default
 
 # 移除要替换的包
 rm -rf feeds/packages/net/mosdns
@@ -33,13 +33,13 @@ echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-pa
 
 
 # 添加aliyundrive-webdav
-#rm -rf feeds/packages/multimedia/aliyundrive-webdav
-#rm -rf feeds/luci/applications/luci-app-aliyundrive-webdav
-#git clone https://github.com/messense/aliyundrive-webdav.git
-#git_sparse_clone master https://github.com/haiibo/openwrt-packages openwrt-packages/webdav2
-#cp -r aliyundrive-webdav/openwrt/aliyundrive-webdav feeds/packages/multimedia
-#cp -r aliyundrive-webdav/openwrt/luci-app-aliyundrive-webdav feeds/luci/applications
-#rm -rf aliyundrive-webdav
+# rm -rf feeds/packages/multimedia/aliyundrive-webdav
+# rm -rf feeds/luci/applications/luci-app-aliyundrive-webdav
+# git clone https://github.com/messense/aliyundrive-webdav.git
+# git_sparse_clone master https://github.com/haiibo/openwrt-packages openwrt-packages/webdav2
+# cp -r aliyundrive-webdav/openwrt/aliyundrive-webdav feeds/packages/multimedia
+# cp -r aliyundrive-webdav/openwrt/luci-app-aliyundrive-webdav feeds/luci/applications
+# rm -rf aliyundrive-webdav
 
 # Themes
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
