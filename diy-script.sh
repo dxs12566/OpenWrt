@@ -38,7 +38,6 @@ rm -rf feeds/luci/applications/luci-app-aliyundrive-webdav
 git clone https://github.com/messense/aliyundrive-webdav.git
 git_sparse_clone master https://github.com/haiibo/openwrt-packages openwrt-packages/webdav2
 cp -r aliyundrive-webdav/openwrt/aliyundrive-webdav feeds/packages/multimedia
-cp -r openwrt-packages/webdav2 feeds/packages/multimedia
 cp -r aliyundrive-webdav/openwrt/luci-app-aliyundrive-webdav feeds/luci/applications
 rm -rf aliyundrive-webdav
 
