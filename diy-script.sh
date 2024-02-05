@@ -5,6 +5,7 @@
 
 #添加 feeds
 sed -i '$a src-git haiibo https://github.com/haiibo/openwrt-packages' feeds.conf.default
+sed -i '$a src-git kenzok8 https://github.com/kenzok8/small-package' feeds.conf.default
 
 # 移除要替换的包
 rm -rf feeds/packages/net/mosdns
