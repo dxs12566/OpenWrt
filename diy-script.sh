@@ -7,11 +7,6 @@
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
 # 移除要替换的包
-rm -rf feeds/luci/themes/luci-theme-argon
-rm -rf feeds/luci/applications/luci-app-argon-config
-rm -rf feeds/luci/applications/luci-app-dockerman
-rm -rf feeds/luci/applications/luci-app-passwall
-rm -rf feeds/luci/applications/luci-app-pushbot
 
 # Git稀疏克隆，只克隆指定目录到本地
 function git_sparse_clone() {
