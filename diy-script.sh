@@ -4,7 +4,7 @@
 # sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
 
 #添加 feeds
-# sed -i '$a src-git haiibo https://github.com/haiibo/openwrt-packages' feeds.conf.default
+sed -i '$a src-git haiibo https://github.com/haiibo/openwrt-packages' feeds.conf.default
 # sed -i '$a src-git kenzok8 https://github.com/kenzok8/small-package' feeds.conf.default
 
 # 移除要替换的包
@@ -13,9 +13,6 @@ rm -rf feeds/luci/applications/luci-app-argon-config
 rm -rf feeds/luci/applications/luci-app-dockerman
 rm -rf feeds/luci/applications/luci-app-passwall
 rm -rf feeds/luci/applications/luci-app-pushbot
-rm -rf feeds/packages/multimedia/aliyundrive-webdav
-rm -rf feeds/luci/applications/luci-app-aliyundrive-webdav
-
 
 # Git稀疏克隆，只克隆指定目录到本地
 function git_sparse_clone() {
@@ -28,10 +25,6 @@ function git_sparse_clone() {
 }
 
 # 科学上网插件
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
-
-
 # 添加aliyundrive-webdav
 rm -rf feeds/packages/multimedia/aliyundrive-webdav
 rm -rf feeds/luci/applications/luci-app-aliyundrive-webdav
