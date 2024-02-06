@@ -17,8 +17,8 @@ function git_sparse_clone() {
 }
 
 # 科学上网插件
-# git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall
-# git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
+git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
 
 # 添加aliyundrive-webdav
 rm -rf feeds/packages/multimedia/aliyundrive-webdav
