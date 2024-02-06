@@ -8,13 +8,11 @@
 # sed -i '$a src-git kenzok8 https://github.com/kenzok8/small-package' feeds.conf.default
 
 # 移除要替换的包
-rm -rf feeds/packages/net/mosdns
-rm -rf feeds/packages/net/msd_lite
-rm -rf feeds/packages/net/smartdns
 rm -rf feeds/luci/themes/luci-theme-argon
-rm -rf feeds/luci/themes/luci-theme-netgear
-rm -rf feeds/luci/applications/luci-app-mosdns
-rm -rf feeds/luci/applications/luci-app-netdata
+rm -rf feeds/luci/applications/luci-app-argon-config
+rm -rf feeds/luci/applications/luci-app-dockerman
+rm -rf feeds/luci/applications/luci-app-passwall
+rm -rf feeds/luci/applications/luci-app-pushbot
 rm -rf feeds/packages/multimedia/aliyundrive-webdav
 rm -rf feeds/luci/applications/luci-app-aliyundrive-webdav
 
