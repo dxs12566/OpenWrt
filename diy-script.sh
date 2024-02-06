@@ -6,8 +6,6 @@
 #添加 feeds
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
-# 移除要替换的包
-
 # Git稀疏克隆，只克隆指定目录到本地
 function git_sparse_clone() {
   branch="$1" repourl="$2" && shift 2
