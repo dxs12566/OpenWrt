@@ -25,6 +25,9 @@ cp -r aliyundrive-webdav/openwrt/aliyundrive-webdav feeds/packages/multimedia
 cp -r aliyundrive-webdav/openwrt/luci-app-aliyundrive-webdav feeds/luci/applications
 rm -rf aliyundrive-webdav
 
+#添加额外软件包
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
+
 # Themes
 rm -rf feeds/luci/applications/luci-theme-argon
 rm -rf feeds/luci/applications/luci-app-argon-config
